@@ -1,0 +1,13 @@
+#canvas {
+  background: #0f0f0f;
+  color: #f0f0f0;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+}
+
+:root {
+  --balloon-color: #808080 !important;
+}

@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://unpkg.com/balloon-css/balloon.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <div
+              id="canvas"
+              :style="{ height: windowSize, width: windowSize }" >
+              <template>
+                <landmark
+                  v-for="landmark in beacons"
+                  :key="landmark.name"
+                  :data="landmark"
+                  :window-size="windowSize"
+                  class="landmark" />
+              </template>
+              <template>
+                <landmark
+                  v-for="landmark in marks"
+                  :key="landmark.name"
+                  :data="landmark"
+                  :window-size="windowSize"
+                  class="landmark" />
+              </template>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
