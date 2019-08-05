@@ -1,4 +1,4 @@
-// { name: '', depth: -1, distances: { base: -1, north: -1, west: -1, south: -1, east: -1 } },
+//    { name: '', depth: -1, distances: { base: -1, north: -1, west: -1, south: -1, east: -1 } },
 var marks = [
     { name: 'Shrooms Copper 3x', depth: 180, distances: { base: 900, north: 1268, west: -1, south: -1, east: 243 } },
     { name: 'Alien cave', depth: 220, distances: { base: 762, north: 935, west: 516, south: 1496, east: -1 } },
@@ -13,6 +13,19 @@ var marks = [
     { name: 'Quartz', depth: 300, distances: { base: 994, north: 1947, west: 1242, south: -1, east: -1 } },
     { name: 'Floating Balls Cave', depth: 200, distances: { base: 1229, north: 2177, west: 1300, south: -1, east: -1 } },
     { name: 'Big Wreck', depth: 90, distances: { base: -1, north: 797, west: 1489, south: 1437, east: -1 } },
+    { name: 'Shroom Forest', depth: 160, distances: { base: 753, north: 710, west: -1, south: -1, east: 1628 } },
+    { name: 'LSD Forest', depth: 230, distances: { base: 1115, north: -1, west: 995, south: 2013, east: -1 } },
+    { name: 'Lead', depth: 240, distances: { base: 1332, north: -1, west: 1154, south: -1, east: 2054 } },
+    { name: 'Big drop', depth: 529, distances: { base: 1700, north: -1, west: 1395, south: 2592, east: -1 } },
+    { name: 'Gold', depth: 160, distances: { base: 1065, north: -1, west: -1, south: 1991, east: 1794 } },
+    { name: 'Two big geysers', depth: 500, distances: { base: 1047, north: -1, west: 1546, south: 1970, east: -1 } },
+    { name: 'Wreck', depth: 21, distances: { base: 576, north: -1, west: -1, south: 878, east: 554 } },
+    { name: 'Aurora', depth: 3, distances: { base: 717, north: -1, west: 1639, south: 814, east: -1 } },
+    { name: 'LSD Forest drop', depth: 448, distances: { base: 1337, north: 1868, west: -1, south: -1, east: 2270 } },
+    { name: 'Copper 2x', depth: 614, distances: { base: 1467, north: 1954, west: -1, south: -1, east: 2381 } },
+    { name: 'Ruby Lithium Carving', depth: 330, distances: { base: 1371, north: 1652, west: -1, south: -1, east: 2354 } },
+    { name: 'Wreck', depth: 217, distances: { base: 1096, north: 1499, west: -1, south: -1, east: 2084 } },
+    { name: 'Ruby Lithium Carving', depth: 341, distances: { base: 1361, north: 1514, west: -1, south: -1, east: 2336 } },
 ]
 
 function distance(x1, y1, x2, y2) {
@@ -128,6 +141,9 @@ var icons = [
   { name: 'Quartz', icon: 'https://vignette.wikia.nocookie.net/subnautica/images/c/cf/Quartz.png' },
   { name: 'Red', icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLTJmwpEAmcVpQwAATN51ICzZYA9tUWK-_QGT9NdOL2LD6Gpca' },
   { name: 'Wreck', icon: 'https://vision.princeton.edu/projects/2010/SUN/explore/SUN_128x128/u/underwater/wreck/sun_blpkmixfmsotarcm.jpg' },
+  { name: 'Ruby', icon: 'https://vignette.wikia.nocookie.net/subnautica/images/b/b8/Aluminum_Oxide_Crystal.png' },
+  { name: 'Lead', icon: 'https://vignette.wikia.nocookie.net/subnautica/images/e/e8/Lead.png' },
+  { name: 'Lithium', icon: 'https://vignette.wikia.nocookie.net/subnautica/images/c/cf/Lithium.png' },
 ]
 
 
@@ -171,8 +187,8 @@ var landmark = Vue.component('landmark', {
     getStyle (coords) {
       return {
         position: 'absolute',
-        top: this.windowSize/2 - coords.y*(this.windowSize/3000) - 24,
-        left: this.windowSize/2 + coords.x*(this.windowSize/3000) -24
+        top: this.windowSize/2 - coords.y*(this.windowSize/3500) - 24,
+        left: this.windowSize/2 + coords.x*(this.windowSize/3500) -24
       }
     },
   }
