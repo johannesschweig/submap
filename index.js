@@ -26,6 +26,13 @@ var marks = [
     { name: 'Ruby Lithium Carving', depth: 330, distances: { base: 1371, north: 1652, west: -1, south: -1, east: 2354 } },
     { name: 'Wreck', depth: 217, distances: { base: 1096, north: 1499, west: -1, south: -1, east: 2084 } },
     { name: 'Ruby Lithium Carving', depth: 341, distances: { base: 1361, north: 1514, west: -1, south: -1, east: 2336 } },
+    { name: 'Gold', depth: 260, distances: { base: 881, north: 1619, west: -1, south: -1, east: 1780 } },
+    { name: 'Ancient Skeleton', depth: 700, distances: { base: 1406, north: 2081, west: 997, south: -1, east: -1 } },
+    { name: 'Trader Leviathan', depth: 380, distances: { base: 1529, north: 2450, west: 1492, south: -1, east: -1 } },
+    { name: 'Lithiumcave', depth: 300, distances: { base: 1541, north: 2240, west: 973, south: -1, east: -1 } },
+    { name: 'Titanium (Desert)', depth: 275, distances: { base: 1672, north: -1, west: 2577, south: 1435, east: -1 } },
+    { name: 'Trader Leviathan', depth: 400, distances: { base: 1800, north: 2778, west: -1, south: 860, east: -1 } },
+    { name: 'Wreck', depth: 410, distances: { base: 1739, north: 2631, west: 1579, south: -1, east: -1 } },
 ]
 
 function distance(x1, y1, x2, y2) {
@@ -131,7 +138,7 @@ var icons = [
   { name: '1000', icon: 'https://vignette.wikia.nocookie.net/subnautica/images/a/ab/Beacon_Ping.png' },
   { name: 'Gold', icon: 'https://vignette.wikia.nocookie.net/subnautica/images/1/10/Gold.png' },
   { name: 'Silver', icon: 'https://vignette.wikia.nocookie.net/subnautica/images/1/1f/Silbererz.png' },
-  { name: 'Titanium', icon: 'https://vignette.wikia.nocookie.net/subnautica/images/8/88/Titan.png' },
+  { name: 'Titanium', icon: 'https://vignette.wikia.nocookie.net/subnautica/images/c/cc/Titanium.png' },
   { name: 'Alien', icon: 'https://vignette.wikia.nocookie.net/subnautica/images/6/67/Pecursor_Symbol_05.png' },
   { name: 'Island', icon: 'http://www.pngall.com/wp-content/uploads/2016/06/Island-Free-PNG-Image.png' },
   { name: 'Floating', icon: 'https://vignette.wikia.nocookie.net/subnautica/images/0/0e/Floating_Stones_Flora.png' },
